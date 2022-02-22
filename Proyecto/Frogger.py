@@ -114,9 +114,9 @@ def colisionando():
     colisionando = False
     for i in range(30):
         if (posicion_triangulo[0] + 0.04 >= posiciones_cuadrados[i][0] - 0.05 
-            and posicion_triangulo[0] - 0.04 <= posiciones_cuadrados[i][0] + 0.05 
+            and posicion_triangulo[0] - 0.04 <= posiciones_cuadrados[i][0] + 0.1 
             and posicion_triangulo[1] + 0.04 >= posiciones_cuadrados[i][1] - 0.05 
-            and posicion_triangulo[1] - 0.04 <= posiciones_cuadrados[i][1] + 0.05):
+            and posicion_triangulo[1] - 0.04 <= posiciones_cuadrados[i][1] + 0.1):
             colisionando = True 
     return colisionando
 
